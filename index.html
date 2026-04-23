@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REPHNEWS | Latest Philippine Headlines, Breaking News</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        reph: {
+                            blue: '#003366',
+                            red: '#cc0000',
+                            light: '#f8f9fa',
+                            dark: '#0f172a'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans text-gray-800 bg-reph-light antialiased">
+
+<!-- Top Navigation Bar -->
+<div class="bg-reph-blue text-white text-[10px] md:text-xs py-2 px-4 border-b border-blue-900">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <span class="font-bold uppercase tracking-widest">Sunday, April 19, 2026</span>
+            <span class="hidden md:inline text-blue-400">|</span>
+            <span class="hidden md:inline text-blue-200">METRO MANILA: 34°C</span>
+        </div>
+        <div class="flex items-center space-x-4">
+            <a href="#" class="hover:text-reph-red transition font-bold">DIGITAL EDITION</a>
+            <a href="#" class="bg-reph-red px-4 py-1 font-black rounded shadow-lg hover:bg-red-700 transition">JOIN US</a>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="bg-white border-b-4 border-reph-blue sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col lg:flex-row justify-between items-center gap-6">
+
+        <div class="text-center lg:text-left">
+            <h1 class="font-serif font-black tracking-tighter text-5xl md:text-7xl text-reph-blue leading-none">
+                REPH<span class="text-reph-red">NEWS</span>
+            </h1>
+            <p class="text-[10px] md:text-xs text-gray-400 uppercase tracking-[0.3em] font-bold mt-2">
+                The Pulse of the Nation
+            </p>
+        </div>
+
+        <!-- Header Ad -->
+        <div class="w-full lg:w-[728px] overflow-hidden border border-gray-100 shadow-sm">
+            <img src="assets/ads/header-banner.gif" class="gif-banner" alt="RephNews Promotion">
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-reph-blue text-white overflow-x-auto scrollbar-hide">
+        <div class="max-w-7xl mx-auto px-4">
+            <ul class="flex space-x-8 text-xs font-black uppercase tracking-widest min-w-max">
+                <li><a href="#" class="block py-4 hover:border-reph-red">NewsInfo</a></li>
+                <li><a href="#" class="block py-4 hover:border-reph-red">Global</a></li>
+                <li><a href="#" class="block py-4 hover:border-reph-red">Business</a></li>
+                <li><a href="#" class="block py-4 hover:border-reph-red">Opinion</a></li>
+                <li><a href="#" class="block py-4 hover:border-reph-red">Sports</a></li>
+                <li><a href="#" class="block py-4 hover:border-reph-red">Lifestyle</a></li>
+                <li><a href="#" class="block py-4 hover:border-reph-red">Entertainment</a></li>
+                <li><a href="#" class="block py-4 hover:border-reph-red">Tech</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+    <!-- Main Column -->
+    <div class="lg:col-span-8 space-y-10">
+
+        <article class="bg-white border-b-2 pb-8">
+            <div class="relative h-64 md:h-[450px] overflow-hidden rounded-sm mb-6">
+                <img src="assets/images/reph1.jpg" class="w-full h-full object-cover">
+            </div>
+
+            <h2 class="font-serif text-4xl md:text-6xl font-black mb-4">
+                New Economic Policy targets 7% GDP Growth by 2027
+            </h2>
+
+            <p class="text-gray-600 text-lg font-serif italic">
+                The National Economic Development Authority unveiled a comprehensive roadmap...
+            </p>
+        </article>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <article>
+                <img src="assets/images/tech.jpg" class="rounded mb-3">
+                <h3 class="font-serif text-2xl font-bold">
+                    Philippines to launch local satellite constellation by late 2026
+                </h3>
+            </article>
+
+            <article>
+                <img src="assets/images/metro.jpg" class="rounded mb-3">
+                <h3 class="font-serif text-2xl font-bold">
+                    Pasig River Ferry adds 5 new air-conditioned stations
+                </h3>
+            </article>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="lg:col-span-4 space-y-12">
+
+        <section class="bg-white p-6 border-t-8 border-reph-blue shadow-lg">
+            <h3 class="font-serif text-3xl font-black italic text-reph-blue mb-8">
+                OPINION
+            </h3>
+
+            <div class="space-y-6">
+                <div>
+                    <h4 class="font-serif font-black text-xl">
+                        The Digital Divide: A chasm we must bridge together
+                    </h4>
+                    <p class="text-sm text-gray-500">By Antonio Mabini</p>
+                </div>
+
+                <div>
+                    <h4 class="font-serif font-black text-xl">
+                        Why our educational system needs a radical reset
+                    </h4>
+                    <p class="text-sm text-gray-500">By Teresa Magbanua</p>
+                </div>
+
+                <div>
+                    <h4 class="font-serif font-black text-xl">
+                        Sustainable cities are no longer a luxury
+                    </h4>
+                    <p class="text-sm text-gray-500">By Juan Luna</p>
+                </div>
+            </div>
+        </section>
+
+    </aside>
+</main>
+
+<footer class="bg-reph-dark text-gray-400 mt-24 py-16 border-t-8 border-reph-red">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-white text-3xl font-black mb-4">REPHNEWS</h2>
+        <p class="text-sm">Fearless journalism since 2026.</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+    lucide.createIcons();
+</script>
+
+</body>
+      </html> 
