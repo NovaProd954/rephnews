@@ -95,12 +95,13 @@
     </nav>
 </header>
 
+<div id="home-page">
 <main class="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
 
     <!-- Main Column -->
     <div class="lg:col-span-8 space-y-10">
 
-        <article class="bg-white border-b-2 pb-8">
+        <article class="bg-white border-b-2 pb-8 cursor-pointer" data-article="article-1">
             <div class="relative h-64 md:h-[450px] overflow-hidden rounded-sm mb-6">
                 <img src="assets/images/reph1.jpg" class="w-full h-full object-cover">
             </div>
@@ -115,14 +116,14 @@
         </article>
 
         <div class="grid md:grid-cols-2 gap-8">
-            <article>
+            <article class="cursor-pointer" data-article="article-2">
                 <img src="assets/images/tech.jpg" class="rounded mb-3">
                 <h3 class="font-serif text-2xl font-bold">
                     Philippines to launch local satellite constellation by late 2026
                 </h3>
             </article>
 
-            <article>
+            <article class="cursor-pointer" data-article="article-3">
                 <img src="assets/images/metro.jpg" class="rounded mb-3">
                 <h3 class="font-serif text-2xl font-bold">
                     Pasig River Ferry adds 5 new air-conditioned stations
@@ -165,6 +166,15 @@
 
     </aside>
 </main>
+</div>
+
+<div id="article-page" class="hidden max-w-4xl mx-auto px-4 py-10">
+    <button id="back-btn" class="mb-6 text-reph-red font-bold">← Back to Home</button>
+
+    <h1 id="article-title" class="font-serif text-4xl md:text-5xl font-black mb-4"></h1>
+    <img id="article-image" class="w-full h-64 object-cover rounded mb-6">
+    <p id="article-content" class="text-lg leading-relaxed text-gray-700"></p>
+</div>
 
 <footer class="bg-reph-dark text-gray-400 mt-24 py-16 border-t-8 border-reph-red">
     <div class="max-w-7xl mx-auto px-4 text-center">
